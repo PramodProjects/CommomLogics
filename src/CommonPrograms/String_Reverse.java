@@ -3,6 +3,8 @@ package CommonPrograms;
 public class String_Reverse {
 
 	public static void main(String[] args) {
+		
+		// Logic 1
 		String s = "aabbcdef";
 		String reverse = "";
 		for (int i = 0; i < s.length(); i++) {
@@ -14,7 +16,7 @@ public class String_Reverse {
 		
 		
 		
-//		
+//		// Logic 2
 //		// Reverse string using for loop and tochararray()
 //		String s = "abcd";
 //		String reverse = "";
@@ -28,7 +30,7 @@ public class String_Reverse {
 		
 		
 		
-		
+		// Logic 3
 //		// Reverse string using reverse for loop and tochararray()
 //		String s ="aabbcdef";
 //		char[] c= s.toCharArray();;
@@ -40,8 +42,7 @@ public class String_Reverse {
 		
 		
 		
-		
-		
+		// Logic 4		
 //		//Reverse string using recursion
 //		String reverse = reverseRecursion("abcd");
 //		System.out.println(reverse);

@@ -3,7 +3,7 @@ package CommonPrograms;
 public class String_DeleteDuplicateCharacters {
 
 	public static void main(String[] args) {
-		String str = "pprra";
+		String str = "pprraqw";
 		int count = 0;
 		String deleteDuplicate="";
 		for (int i = 0; i < str.length(); i++) {
@@ -18,7 +18,5 @@ public class String_DeleteDuplicateCharacters {
 			}
 			count = 0;
 		}
-		System.out.println();
-		System.out.println(deleteDuplicate);
-	}
+			}
 }

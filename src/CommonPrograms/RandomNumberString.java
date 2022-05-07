@@ -30,6 +30,8 @@ public class RandomNumberString {
 		String s2 = RandomStringUtils.randomAlphabetic(3);
 		System.out.println(s2);
 
+		
+		
 	}
 
 }

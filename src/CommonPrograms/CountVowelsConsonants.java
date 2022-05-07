@@ -1,6 +1,6 @@
 package CommonPrograms;
 
-public class CountVowelsNonVowels {
+public class CountVowelsConsonants {
 
 	public static void main(String[] args) {
 		char[] chars = {'a', 'b', 'c','e', 'b'};
@@ -17,7 +17,7 @@ public class CountVowelsNonVowels {
 			}
 		}
 		System.out.println("Vowels " + vCount);
-		System.out.println("Non Vowels " + cCount);
+		System.out.println("Consonants " + cCount);
 
 	}
 

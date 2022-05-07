@@ -1,11 +1,12 @@
 package CommonPrograms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 
-public class Array_FindDuplicateElement {
+public class Array_FindDuplicateElements {
 
-	public static void main(String[] args) {
+	public static void main(String[] Args) {
 		int[] num = { 2, 3, 1, 2, 8, 1, 2, 1, 1, 8, 3, 9, 4, 4 };
 		ArrayList al = new ArrayList();
 		int count = 0;
@@ -28,6 +29,7 @@ public class Array_FindDuplicateElement {
 			count = 0;
 		}
 
+		
 		// Using Collections
 //		HashSet hSet = new HashSet();
 //		for (int i = 0; i < num.length; i++) {

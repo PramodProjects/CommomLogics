@@ -32,7 +32,29 @@ public class String_CountEachCharacter {
 
 		}
 		
-		// Using lamda
+		// Login 2
+		String str = "abcabcz";
+		char[] strArr = str.toCharArray();
+		int[] freq = new int[str.length()];		
+		
+		for (int i = 0; i < strArr.length; i++) {
+			freq[i] = 1;
+			for (int j = i+1; j < strArr.length; j++) {
+				if(strArr[i] == strArr[j]) {
+					freq[i]++;
+					strArr[j] = '0';
+				}
+			}
+		}
+	
+		for (int i = 0; i < strArr.length; i++) {
+			if(strArr[i] !='0') {
+				System.out.println(strArr[i] + "-" + freq[i]);
+			}
+		}
+		
+		
+		// Logic 3 Using lamda
 		String s2 = "fdhklf";
 		long cnt =s2.chars().filter(ch-> ch == 'f').count();
 		System.out.println(cnt);
