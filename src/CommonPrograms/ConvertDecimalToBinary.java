@@ -20,7 +20,7 @@ public class ConvertDecimalToBinary {
 		
 		// Logic 2
 		
-		int  a = 444;
+		int  a = 4;
 		int x = 0;
 		int[] intArr = new int[100];
 		while(a!=0)

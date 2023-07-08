@@ -9,7 +9,7 @@ public class PerfectNumber {
 
 	public static void main(String[] args) {
 
-		int perfectNumber = 28;
+		int perfectNumber = 6;
 		int count = 0;
 		for (int i = 1; i <= perfectNumber / 2; i++) {
 			if (perfectNumber % i == 0) {

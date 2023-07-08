@@ -4,15 +4,15 @@ public class String_Reverse {
 
 	public static void main(String[] args) {
 		
-		// Logic 1
-		String s = "aabbcdef";
-		String reverse = "";
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
-			reverse = c + reverse;
-
-		}
-		System.out.println(reverse);
+//		// Logic 1
+//		String s = "aabbcdef";
+//		String reverse = "";
+//		for (int i = 0; i < s.length(); i++) {
+//			char c = s.charAt(i);
+//			reverse = c + reverse;
+//
+//		}
+//		System.out.println(reverse);
 		
 		
 		
@@ -43,10 +43,10 @@ public class String_Reverse {
 		
 		
 		// Logic 4		
-//		//Reverse string using recursion
-//		String reverse = reverseRecursion("abcd");
-//		System.out.println(reverse);
-//		
+		//Reverse string using recursion
+		String reverse = reverseRecursion("abcd");
+		System.out.println(reverse);
+		
 		
 		
 

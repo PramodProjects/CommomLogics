@@ -3,6 +3,8 @@ package CommonPrograms;
 public class String_WordReverse {
 
 	public static void main(String[] args) {
+		
+		// Logic 1
 		String str = "pra mod jan ji rala";
 		String[] strArr = str.split(" ");
 		String wordReverse = "";
@@ -15,6 +17,29 @@ public class String_WordReverse {
 		}
 		System.out.println(wordReverse);
 
+		// Logic 2
+		
+		String strn = "This is Apple, Apple is a good organisation";		
+		String[] strnArr = strn.split(" ");
+		String wordRev = "";		
+		for (int i = 0; i < strnArr.length; i++) {
+			String strRev = "";
+			for (int j = 0; j < strnArr[i].length(); j++) {
+
+				strRev = strnArr[i].charAt(j) + strRev;
+
+			}
+			if (strRev.contains(",")) {
+				strRev = strRev.replace(",", "");
+				strRev = strRev + ",";
+				wordRev = wordRev + strRev + " ";
+			}
+
+			else {
+				wordRev = wordRev + strRev + " ";
+			}
+		}
+		System.out.println(wordRev);
 		
 		
 //		// Using Strin Builder

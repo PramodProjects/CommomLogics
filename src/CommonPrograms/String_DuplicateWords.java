@@ -20,12 +20,12 @@ public class String_DuplicateWords {
 				if (words[i].equals(words[j])) {
 					count++;
 					// Set words[j] to 0 to avoid printing visited word
-					words[j] = "0";
+					words[j] = "";
 				}
 			}
 
 			// Displays the duplicate word if count is greater than 1
-			if (count > 1 && words[i] != "0")
+			if (count > 1 && words[i] != "")
 				System.out.println(words[i]);
 		}
 

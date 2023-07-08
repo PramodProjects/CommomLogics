@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.Map.Entry;
 
 public class Collections_Map {
 
@@ -73,6 +74,32 @@ public class Collections_Map {
 		}
 		
 		System.out.println(set2);
+		
+		
+		
+		// Removing warnings
+		HashMap<String, Integer> m = new HashMap<String, Integer>();
+		m.put("Chiru", 700);
+		m.put("Bala", 800);
+		m.put("Venki", 200);
+		m.put("Nag", 500);
+		System.out.println(m);
+		System.out.println(m.put("Chiru", 1000));
+		Set<String> st = m.keySet();
+		System.out.println(st);
+		Collection<Integer> c1 = m.values();
+		System.out.println(c1);
+		Set<Entry<String, Integer>> s1 = m.entrySet();
+		Iterator<Entry<String, Integer>> itr1 = s1.iterator();
+		while(itr1.hasNext()) {
+			Map.Entry<String, Integer> entry =	(Map.Entry<String, Integer>)itr1.next();
+			System.out.println(entry.getKey() + "-------" + entry.getValue());
+			if(entry.getKey().equals("Chiru"))
+			{
+				entry.setValue(2000);
+			}
+		}
+		System.out.println(m);
 		
 
 	}

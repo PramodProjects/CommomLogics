@@ -2,7 +2,12 @@ package CommonPrograms;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
 
 public class Array_FindDuplicateElements {
 
@@ -37,6 +42,49 @@ public class Array_FindDuplicateElements {
 //				System.out.println(num[i] + " - is duplicate");
 //			}
 //		}
+		
+		// Logic 3
+		int[] arr = new int[] { 2, 3, 1, 2, 8, 1, 2, 1, 1, 8, 3, 9, 4, 4 };
+		
+		for (int i = 0; i < arr.length; i++) {
+			int count1 = 1;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] == arr[j]) {
+					count1++;
+					arr[j] = -1;
+				}
+			}
+
+			if (arr[i] != -1 && count1>1) {
+				System.out.println(arr[i] + "- is duplicate");
+			}
+			
+		}
+
+
+		// Logic 4
+		int[] num1 = { 1, 2, 3, 1, 2 };
+		HashMap<Integer, Integer> hMap = new HashMap<Integer, Integer>();
+
+		for (int i = 0; i < num1.length; i++) {
+
+			if (!hMap.containsKey(num1[i])) {
+				hMap.put(num1[i], 1);
+
+			} else {
+				int n = hMap.get(num1[i]);
+				hMap.put(num1[i], n + 1);
+
+			}
+		}
+		Set<Entry<Integer, Integer>> set = hMap.entrySet();
+		Iterator<Entry<Integer, Integer>> it = set.iterator();
+		while (it.hasNext()) {
+			Map.Entry<Integer, Integer> entryMap =  it.next();
+			if (entryMap.getValue() > 1) {
+				System.out.println(entryMap.getKey());
+			}
+		}
 
 	}
 

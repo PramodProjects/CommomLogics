@@ -1,6 +1,7 @@
 package CommonPrograms;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Array_2ndLargestNumber {
 
@@ -22,7 +23,7 @@ public class Array_2ndLargestNumber {
 		}
 		
 		System.out.println(Arrays.toString(num2));
-		num2 = Arrays.copyOf(num2, count);
+		num2 = Arrays.copyOf(num2, count);		
 		System.out.println(Arrays.toString(num2));
 		
 		for (int i = 0; i < count; i++) {
@@ -38,6 +39,12 @@ public class Array_2ndLargestNumber {
 		}
 		System.out.println(Arrays.toString(num2));
 		System.out.println("Second largest number: " + num2[1]);
+		
+		// logic 2
+		int[] num11 = {6, 2, 3, 2, 9, 7, 7, 5, 4,2};
+		int[] num22 = Arrays.stream(num11).distinct().sorted().toArray();
+		System.out.println(Arrays.toString(num22));
+		System.out.println(num22[num22.length-2]);
 
 	}
 

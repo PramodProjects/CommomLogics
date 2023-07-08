@@ -1,9 +1,12 @@
 package CommonPrograms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.NavigableSet;
 import java.util.Stack;
+import java.util.TreeSet;
 
 public class Collections_Reverse {
 
@@ -13,6 +16,7 @@ public class Collections_Reverse {
 		list.add("b");
 		list.add("c");
 
+		
 		Stack<String> stack = new Stack<String>();
 		for (int i = 0; i < list.size(); i++) {
 			String str = (String) list.get(i);
@@ -51,5 +55,19 @@ public class Collections_Reverse {
 			String str = disIterator.next();
 			System.out.println(str);			
 		}
+		
+		// Using NavigableSet
+		NavigableSet set = new TreeSet();
+		set.add("g");
+		set.add("d");
+		set.add("a");
+		set.add("b");
+		
+		
+		NavigableSet set1= set.descendingSet();
+		System.out.println(set1);
+		
+		
+		
 	}
 }

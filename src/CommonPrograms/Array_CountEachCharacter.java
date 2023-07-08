@@ -27,10 +27,8 @@ public class Array_CountEachCharacter {
 		
 		// Logic 2
 		int[] arr = new int[] { 1, 2, 8, 3, 2, 2, 2, 5, 1, 8 };
-		int[] freq = new int[arr.length];
 		int count1 = 1;
 		for (int i = 0; i < arr.length; i++) {
-			freq[i] = 1;
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
 					count1++;

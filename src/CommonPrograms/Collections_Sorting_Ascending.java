@@ -16,8 +16,8 @@ public class Collections_Sorting_Ascending {
 		alist.add("Z");
 		alist.add("A");
 		//alist.add(1);
-		TreeSet<String> ts=new TreeSet<String>();
-		ts.addAll(alist);
+		TreeSet<String> ts=new TreeSet<String>(alist);
+		//ts.addAll(alist);
 		System.out.println(ts);	
 	}
 }

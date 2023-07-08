@@ -3,6 +3,7 @@ package CommonPrograms;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class Collections_FindDuplicates {
@@ -22,11 +23,11 @@ public class Collections_FindDuplicates {
 
 			}
 		}
-		Set set = hMap.entrySet();
-		Iterator i = set.iterator();
+		Set<Entry<Integer, Integer>> set = hMap.entrySet();
+		Iterator<Entry<Integer, Integer>> i = set.iterator();
 		while (i.hasNext()) {
-			Map.Entry entryMap = (Map.Entry) i.next();
-			if ((int) entryMap.getValue() > 1) {
+			Map.Entry<Integer, Integer> entryMap = (Map.Entry<Integer, Integer>) i.next();
+			if (entryMap.getValue() > 1) {
 				System.out.println(entryMap.getKey());
 			}
 		}

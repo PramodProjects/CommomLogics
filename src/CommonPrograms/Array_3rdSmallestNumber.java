@@ -37,7 +37,14 @@ public class Array_3rdSmallestNumber {
 			
 		}
 		System.out.println(Arrays.toString(num2));
-		System.out.println("Second largest number: " + num2[2]);
+		System.out.println("Third smallest number: " + num2[2]);
+		
+		// Logic 2
+		int[] num11 = {6, 2, 3, 2, 9, 7, 7, 5, 4,2};
+		int[] num22 = Arrays.stream(num11).distinct().sorted().toArray();
+		System.out.println(Arrays.toString(num22));
+		System.out.println(num22[2]);
+		
 
 	}
 
