@@ -15,7 +15,7 @@ public class Number_MissingNumber {
 		int missingNumber1 = (n * (n + 1) / 2) - sum;
 		System.out.println(missingNumber1);
 
-		// Login 2
+		// Logic 2
 		int sum1 = 0;
 		for (int i = 0; i < arr.length; i++) {
 			sum1 = sum1 + arr[i];

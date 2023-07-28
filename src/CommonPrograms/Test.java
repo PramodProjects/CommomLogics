@@ -34,6 +34,13 @@ import java.util.Stack;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.SynchronousQueue;
+import java.util.function.Function;
+import java.util.function.IntBinaryOperator;
+import java.util.function.IntFunction;
+import java.util.function.IntPredicate;
+import java.util.function.IntUnaryOperator;
+import java.util.function.Predicate;
+import java.util.function.UnaryOperator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collector;
@@ -42,27 +49,32 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang3.RandomUtils;
+import org.apache.commons.lang3.Streams;
 import org.omg.Messaging.SyncScopeHelper;
 
 class Test {
 
 	public static void main(String[] args) throws IOException {
 
-		ArrayList<Integer> al = new ArrayList<Integer>();
-		al.add(5);
-		al.add(15);
-		al.add(10);
-		al.add(6);
-		al.add(7);
 		
-	
+	int num = 6;
+	int j = 0;
+	for (int i = 1; i <= num-1; i++) {
+		if(num%i ==0) {
+			j = j+i;
+		}
 		
-
 	}
 	
-	
-	
+	if(num == j) {
+		System.out.println("perfect");
+	}
+	else
+	{
+		System.out.println("not perfect");
+	}
+		
+		
+	}
+
 }
-
-
-

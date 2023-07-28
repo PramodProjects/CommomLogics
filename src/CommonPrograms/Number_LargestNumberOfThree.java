@@ -1,6 +1,6 @@
 package CommonPrograms;
 
-public class LargestNumberOfThreeNumbers {
+public class Number_LargestNumberOfThree {
 
 	public static void main(String[] args) {
 		int a = 100;
@@ -20,6 +20,8 @@ public class LargestNumberOfThreeNumbers {
 		int largest1 = a>b?a:b;
 		int largest2 = c>largest1?c:largest1;
 		System.out.println("largest number is - " + largest2);
+		
+		
 
 	}
 

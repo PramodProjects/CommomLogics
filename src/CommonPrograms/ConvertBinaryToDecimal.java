@@ -3,7 +3,7 @@ package CommonPrograms;
 public class ConvertBinaryToDecimal {
 
 	public static void main(String[] args) {
-		int binary = 11011011;
+		int binary = 110;
 		int remainder;
 		int decimal = 0;
 		int j = 1;

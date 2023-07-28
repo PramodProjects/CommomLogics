@@ -1,6 +1,6 @@
 package CommonPrograms;
 
-public class PrimeNumber {
+public class Number_PrimeNumber {
 
 	public static void main(String[] args) {
 		

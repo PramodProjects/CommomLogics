@@ -15,7 +15,6 @@ public class ExceptionHandling {
 			System.out.println(e);
 			System.out.println(e.toString());
 			e.printStackTrace();
-			//System.out.println();
 			
 		
 			

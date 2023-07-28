@@ -1,6 +1,6 @@
 package CommonPrograms;
 
-public class ReverseNumber {
+public class Number_Reverse {
 
 	public static void main(String[] args) {
 		int number = 153;
