@@ -9,7 +9,7 @@ public class String_RemoveAdjacentChars {
 	public static void main(String[] args) {
 		
 		// Logic 1
-		String input = "caaabbcd";
+		String input = "caaabbcdc";
 		String regex = "(.)(\\1)+";
 		
 	    Matcher m = Pattern.compile(regex).matcher(input);	    
@@ -22,7 +22,7 @@ public class String_RemoveAdjacentChars {
 	    
 	    
 	    // logic 2
-		String s = "&ccaaabbcd";
+		String s = "&ccaaabbcdd";
 		StringBuilder builder = new StringBuilder();
 		char lastchar = '\0';
 		for (int i = 0; i < s.length(); i++) {

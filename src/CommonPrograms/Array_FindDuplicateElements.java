@@ -12,6 +12,8 @@ import java.util.Map.Entry;
 public class Array_FindDuplicateElements {
 
 	public static void main(String[] Args) {
+		
+		// Logic 1
 		int[] num = { 2, 3, 1, 2, 8, 1, 2, 1, 1, 8, 3, 9, 4, 4 };
 		ArrayList al = new ArrayList();
 		int count = 0;
@@ -62,7 +64,7 @@ public class Array_FindDuplicateElements {
 		}
 
 
-		// Logic 4
+		// Logic 4  Using Map
 		int[] num1 = { 1, 2, 3, 1, 2 };
 		HashMap<Integer, Integer> hMap = new HashMap<Integer, Integer>();
 
@@ -80,9 +82,9 @@ public class Array_FindDuplicateElements {
 		Set<Entry<Integer, Integer>> set = hMap.entrySet();
 		Iterator<Entry<Integer, Integer>> it = set.iterator();
 		while (it.hasNext()) {
-			Map.Entry<Integer, Integer> entryMap =  it.next();
+			Entry<Integer, Integer> entryMap =  it.next();
 			if (entryMap.getValue() > 1) {
-				System.out.println(entryMap.getKey());
+				System.out.println(entryMap.getKey() + " is  "  +  entryMap.getValue()+ " times");
 			}
 		}
 

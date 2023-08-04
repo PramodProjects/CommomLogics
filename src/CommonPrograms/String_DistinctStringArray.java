@@ -26,6 +26,12 @@ public class String_DistinctStringArray {
 
 		}
 		System.out.println(str1);
+		
+		
+		// Logic 2 Java 8 Streams
+//		String[] strArr = str.replace(",", "").split(" ");
+//		Arrays.stream(strArr).distinct().forEach(a -> System.out.print(a + " "));
+		
 
 	}
 

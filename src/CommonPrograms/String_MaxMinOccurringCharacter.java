@@ -3,7 +3,7 @@ package CommonPrograms;
 public class String_MaxMinOccurringCharacter {
 
 	public static void main(String[] args) {
-		String str = "abcabbbcczzk";
+		String str = "abbcccdddd";
 
 		int[] freq = new int[str.length()];
 		char[] strArr = str.toCharArray();

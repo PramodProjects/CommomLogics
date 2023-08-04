@@ -62,7 +62,7 @@ public class Collections_Reverse {
 		set.add("d");
 		set.add("a");
 		set.add("b");
-		
+		System.out.println(set);
 		
 		NavigableSet set1= set.descendingSet();
 		System.out.println(set1);

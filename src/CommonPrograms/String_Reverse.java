@@ -1,18 +1,22 @@
 package CommonPrograms;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class String_Reverse {
 
 	public static void main(String[] args) {
 		
-//		// Logic 1
-//		String s = "aabbcdef";
-//		String reverse = "";
-//		for (int i = 0; i < s.length(); i++) {
-//			char c = s.charAt(i);
-//			reverse = c + reverse;
-//
-//		}
-//		System.out.println(reverse);
+		// Logic 1
+		String s = "aabbcdef";
+		String reverse = "";
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			reverse = c + reverse;
+
+		}
+		System.out.println(reverse);
 		
 		
 		
@@ -41,11 +45,27 @@ public class String_Reverse {
 //		System.out.println(reverse);
 		
 		
+		// Logic 4
+		StringBuilder sb = new StringBuilder(s);
+		sb.reverse().toString();
+		System.out.println(sb);
 		
-		// Logic 4		
+		// Logic 5
+		String s1 = Stream.of(s).map(word -> new StringBuilder(word).reverse())
+				.collect(Collectors.joining());
+		System.out.println(s1);
+		
+		// Logic 6
+		String s2 = Arrays.asList(s).stream()
+			    .map(a -> new StringBuilder(a).reverse().toString())
+			    .collect(Collectors.toList()).get(0);
+		System.out.println(s2);
+
+					
+		// Logic 7	
 		//Reverse string using recursion
-		String reverse = reverseRecursion("abcd");
-		System.out.println(reverse);
+		String rev = reverseRecursion("abcd");
+		System.out.println(rev);
 		
 		
 		

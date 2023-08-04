@@ -24,9 +24,20 @@ public class Java8_GetHighestMarks {
 		// name where marks >= 80
 		studentList.stream().filter(a -> a.getMarks()>=80).forEach(a -> System.out.println(a.getName()));
 		
-		// highest marks
+		// highest marks - Logic 1
 		int max = studentList.stream().map(a -> a.getMarks()).max(Integer::compare).get();
 		System.out.println(max);
+		
+
+		// highest marks - Logic 2
+		int max1 = studentList.stream().map(a -> a.getMarks()).max((x, y) -> x.compareTo(y)).get();
+		System.out.println(max1);
+		
+
+		// highest marks - Logic 3
+		int max2 = studentList.stream().map(a -> a.getMarks()).max((x, y) -> x.compare(x,y)).get();
+		System.out.println(max2);
+		
 		
 		// Name who got highest marks
 		studentList.stream().filter(a -> a.getMarks() == max).forEach(a -> System.out.println(a.getName()));

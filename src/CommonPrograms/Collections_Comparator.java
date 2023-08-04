@@ -21,14 +21,26 @@ public class Collections_Comparator {
 
 }
 
-class Descending implements Comparator
+// Logic 1
+//class Descending implements Comparator
+//{
+//
+//	@Override
+//	public int compare(Object o1, Object o2) {
+//		Integer I1 = (Integer)o1;
+//		Integer I2 = (Integer)o2;
+//		return -I1.compareTo(I2);
+//	}
+//	
+//}
+
+// Logic 2
+class Descending implements Comparator<Integer>
 {
 
 	@Override
-	public int compare(Object o1, Object o2) {
-		Integer I1 = (Integer)o1;
-		Integer I2 = (Integer)o2;
-		return -I1.compareTo(I2);
+	public int compare(Integer o1, Integer o2) {		
+		return -o1.compareTo(o2);
 	}
 	
 }

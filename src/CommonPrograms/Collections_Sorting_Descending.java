@@ -8,7 +8,8 @@ public class Collections_Sorting_Descending {
 
 	public static void main(String[] args) {
 		//TreeSet ts = new TreeSet<>(new MyDescending());
-		ArrayList al = new ArrayList<>();
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("zgh");
 		al.add("zgh");
 		al.add("ajh");
 		al.add("gbh");
@@ -19,10 +20,20 @@ public class Collections_Sorting_Descending {
 		al.add("Kzhgh");
 		al.add("m");
 		
+		// Logic 1
 		TreeSet treeSet = new TreeSet<>(new MyDescending());
-		treeSet.addAll(al);
-		
+		treeSet.addAll(al);		
 		System.out.println(treeSet);
+		
+		
+		// Logic 2
+		al.sort(Comparator.reverseOrder());
+		System.out.println(al);
+		
+		// Logic 3
+		al.stream().sorted((a, b) -> -a.compareToIgnoreCase(b))
+		.forEach(x -> System.out.print(x + " "));
+		
 	}
 
 }

@@ -5,6 +5,8 @@ import java.util.function.IntPredicate;
 public class Java8_VowelsCount {
 
 	public static void main(String[] args) {
+		
+		// Logic 1
 		IntPredicate vowels = new IntPredicate() {
 			
 			@Override
@@ -17,6 +19,13 @@ public class Java8_VowelsCount {
 		String str = "pramod";
 		long l = str.chars().filter(vowels).count();
 		System.out.println(l);
+		
+		
+		// Logic 2
+		String str1 = "pramod";
+		long l1 = str1.chars().filter(x -> x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u').count();
+		System.out.println(l1);
+		
 
 	}
 

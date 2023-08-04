@@ -7,15 +7,16 @@ public class String_WordReverse {
 		// Logic 1
 		String str = "pra mod jan ji rala";
 		String[] strArr = str.split(" ");
-		String wordReverse = "";
+		String wordReverse1 = "";		
 		for (int i = 0; i < strArr.length; i++) {
 			String strReverse = "";
 			for (int j = 0; j < strArr[i].length(); j++) {
 				strReverse = strArr[i].charAt(j) + strReverse;
 			}
-			wordReverse = wordReverse + strReverse + " ";
+			wordReverse1 = wordReverse1 + strReverse + " ";			
 		}
-		System.out.println(wordReverse);
+		System.out.println(wordReverse1);
+		
 
 		// Logic 2
 		
@@ -42,6 +43,7 @@ public class String_WordReverse {
 		System.out.println(wordRev);
 		
 		
+//		// Logic 3
 //		// Using Strin Builder
 //		String s = "abc xyz";
 //
@@ -69,6 +71,8 @@ public class String_WordReverse {
 //		}
 //		System.out.println(strReverse);
 
+		
+		
 //		// Output - zyx cba
 //		String str ="abc xyz";
 //		String strReverse ="";

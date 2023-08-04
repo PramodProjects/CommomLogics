@@ -1,3 +1,4 @@
+
 package CommonPrograms;
 
 public class String_CountEachCharacter {
@@ -17,8 +18,9 @@ public class String_CountEachCharacter {
 
 		// Count all chars
 		String s1 = "abcdabcdd";
-		int count1 = 0;
+		
 		for (int i = 0; i < s1.length(); i++) {
+			int count1 = 0;
 			for (int j = 0; j < s1.length(); j++) {
 				if (s1.charAt(i) == s1.charAt(j)) {
 					count1++;
@@ -29,7 +31,7 @@ public class String_CountEachCharacter {
 			s1 = s1.replaceAll(String.valueOf(s1.charAt(i)), "");
 			//s1 = s1.replaceAll(Character.toString(s1.charAt(i)), "");
 			i--;
-			count1 = 0;
+			
 
 		}
 		
@@ -56,10 +58,9 @@ public class String_CountEachCharacter {
 		
 		// Logic 3
 		String str2 = "abcabcz00";
-		char[] strArr2 = str2.toCharArray();
-		int count2;
+		char[] strArr2 = str2.toCharArray();		
 		for (int i = 0; i < strArr2.length; i++) {
-			count2 = 1;
+			int count2 = 1;
 			for (int j = i + 1; j < strArr2.length; j++) {
 				if (strArr2[i] == strArr2[j]) {
 					count2++;

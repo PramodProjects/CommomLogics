@@ -11,6 +11,10 @@ public class Array_RightRotateTheElements {
 		for (int i = num1.length - 1; i > 0; i--) {
 			num1[i] = num1[i - 1];
 		}
+		
+//		for (int i = num1.length-2; i >=0; i--) {
+//			num1[i+1] = num1[i];
+//		}
 		num1[0] = last;
 		System.out.println(Arrays.toString(num1));
 		

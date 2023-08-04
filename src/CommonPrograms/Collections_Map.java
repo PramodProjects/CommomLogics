@@ -92,7 +92,8 @@ public class Collections_Map {
 		Set<Entry<String, Integer>> s1 = m.entrySet();
 		Iterator<Entry<String, Integer>> itr1 = s1.iterator();
 		while(itr1.hasNext()) {
-			Map.Entry<String, Integer> entry =	(Map.Entry<String, Integer>)itr1.next();
+			//Map.Entry<String, Integer> entry =	(Map.Entry<String, Integer>)itr1.next();
+			Entry<String, Integer> entry =	itr1.next();
 			System.out.println(entry.getKey() + "-------" + entry.getValue());
 			if(entry.getKey().equals("Chiru"))
 			{

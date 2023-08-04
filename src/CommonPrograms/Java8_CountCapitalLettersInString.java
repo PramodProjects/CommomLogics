@@ -12,6 +12,10 @@ public class Java8_CountCapitalLettersInString {
 		// Logic 2
 		long cnt1 = str.chars().filter(a -> Character.isUpperCase(a)).count();
 		System.out.println(cnt1);
+		
+		// Logic 3
+		str.chars().filter(a -> Character.isUpperCase(a))
+		.forEach(a -> System.out.println((char)a));
 
 	}
 

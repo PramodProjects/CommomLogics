@@ -8,7 +8,9 @@ public class String_RemoveIntegers {
 		
 		// Logic 1
 		 System.out.println(s.replaceAll("[0-9]", ""));
-		 System.out.println(s.replaceAll("[^a-zA-Z0-9]", ""));
+		 System.out.println(s.replaceAll("[^a-zA-Z0-9]", "")); // to remove special chars
+		 System.out.println(s.replaceAll("\\W", "")); // to remove special chars
+		 
 
 		// Logic 2
 		char[] c = s.toCharArray();
@@ -20,6 +22,14 @@ public class String_RemoveIntegers {
 		System.out.println(result);
 		
 		
+		// Logic 3
+		for (int i = 0; i < s.length(); i++) {
+			if (Character.isDigit(s.charAt(i))) {
+				s = s.replace(String.valueOf(s.charAt(i)), "");
+				i--;
+			}
+		}
+		System.out.println(s);
 
 	}
 

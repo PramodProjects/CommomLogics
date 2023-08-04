@@ -8,6 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.reflect.Array;
 
 import static java.lang.Math.*;
 
@@ -31,6 +32,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.Stack;
+import java.util.StringJoiner;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.SynchronousQueue;
@@ -55,26 +57,24 @@ import org.omg.Messaging.SyncScopeHelper;
 class Test {
 
 	public static void main(String[] args) throws IOException {
-
+		/* Print below format
+		******
+		*****
+		****
+		***
+		**
+		*
+		*/
 		
-	int num = 6;
-	int j = 0;
-	for (int i = 1; i <= num-1; i++) {
-		if(num%i ==0) {
-			j = j+i;
+		
+		for (int i = 0; i <5; i++) {
+			for (int j = i; j < 5; j++) {
+				System.out.print("*");
+				
+			}
+			System.out.println();
 		}
-		
-	}
-	
-	if(num == j) {
-		System.out.println("perfect");
-	}
-	else
-	{
-		System.out.println("not perfect");
-	}
-		
-		
-	}
 
+
+	}
 }

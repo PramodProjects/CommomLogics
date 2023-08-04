@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class Array_EqualityOfTwoArrays {
 
 	public static void main(String[] args) {
+		
+		// Logic 1
 		int[] num1 = { 1, 3, 5 };
 		int[] num2 = { 1, 3, 5 };
 
@@ -24,7 +26,9 @@ public class Array_EqualityOfTwoArrays {
 		} else {
 			System.out.println("not equal");
 		}
-
+		
+		
+//		// Logic 2
 //		boolean bool = Arrays.equals(num1, num2);
 //		if (bool == true) {
 //			System.out.println("equal");

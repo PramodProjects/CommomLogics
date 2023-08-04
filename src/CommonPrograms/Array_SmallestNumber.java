@@ -1,6 +1,10 @@
 package CommonPrograms;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import org.apache.commons.lang3.stream.Streams;
 
 public class Array_SmallestNumber {
 
@@ -21,6 +25,16 @@ public class Array_SmallestNumber {
 		// Logic 2 - java 8
 		int small = Arrays.stream(numbers).min().getAsInt();
 		System.out.println(small);
+		
+		// Logic 3
+		int small1 = IntStream.of(numbers).min().getAsInt();
+		System.out.println(small1);
+		
+		// Logic 4
+		int small2 = Stream.of(numbers).flatMapToInt(Arrays::stream).min().getAsInt();
+		System.out.println(small2);
+		
+		
 
 	}
 
