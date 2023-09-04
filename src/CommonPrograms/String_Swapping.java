@@ -6,7 +6,7 @@ public class String_Swapping {
 		String str1 = "xy";
 		String str2 = "abc";
 		
-		str1 = str1+ str2;
+		str1 = str1+ str2; // xyabc
 		str2 = str1.substring(0, str1.length()-str2.length());
 		str1 = str1.substring(str2.length());
 		

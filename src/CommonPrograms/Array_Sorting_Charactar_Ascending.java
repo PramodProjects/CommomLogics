@@ -2,7 +2,7 @@ package CommonPrograms;
 
 import java.util.Arrays;
 
-public class Array_Sorting_Charactar {
+public class Array_Sorting_Charactar_Ascending {
 
 	public static void main(String[] args) {
 	    
@@ -28,7 +28,10 @@ public class Array_Sorting_Charactar {
 	    // Logic 2
 	    wordSt.chars().sorted().forEach(a -> System.out.print((char)a));
 	    
-	    
+	    // Logic 3
+	    System.out.println();
+	    Arrays.sort(word);
+	    System.out.println(Arrays.toString(word));
 	   
 	}
 

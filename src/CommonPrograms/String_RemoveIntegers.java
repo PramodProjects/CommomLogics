@@ -10,7 +10,8 @@ public class String_RemoveIntegers {
 		 System.out.println(s.replaceAll("[0-9]", ""));
 		 System.out.println(s.replaceAll("[^a-zA-Z0-9]", "")); // to remove special chars
 		 System.out.println(s.replaceAll("\\W", "")); // to remove special chars
-		 
+		 System.out.println(s.replaceAll("\\w", "")); // to remove except special chars
+			
 
 		// Logic 2
 		char[] c = s.toCharArray();

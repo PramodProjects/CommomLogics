@@ -1,5 +1,7 @@
 package CommonPrograms;
 
+import java.util.Arrays;
+
 public class String_MaxMinOccurringCharacter {
 
 	public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class String_MaxMinOccurringCharacter {
 		char minChar = strArr[0];
 		char maxChar = strArr[0];
 
+		
 		for (int i = 0; i < strArr.length; i++) {
 			freq[i] = 1;
 			for (int j = i + 1; j < strArr.length; j++) {
@@ -20,7 +23,7 @@ public class String_MaxMinOccurringCharacter {
 				}
 			}
 		}
-
+		
 		min = max = freq[0];
 		for (int i = 0; i < strArr.length; i++) {
 			if (min > freq[i] && strArr[i] != '0') {

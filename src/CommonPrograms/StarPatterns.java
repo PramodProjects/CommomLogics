@@ -414,8 +414,26 @@ public class StarPatterns {
 		}
 
 		
+		System.out.println();
+		System.out.println();
+		//## Printing the pattern ##
+		/*
+		 0
+		 01
+		 002
+		 0003
+		 00004		 
+		 */
+		
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j <i; j++) {				
+				System.out.print(0);				
+			}
+			System.out.println(i);
+		}
 		
 		
+				
 		System.out.println();
 		System.out.println();
 		//## Printing the pattern ##

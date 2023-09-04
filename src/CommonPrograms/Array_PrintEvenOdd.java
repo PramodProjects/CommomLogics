@@ -1,5 +1,7 @@
 package CommonPrograms;
 
+import java.util.stream.IntStream;
+
 public class Array_PrintEvenOdd {
 
 	public static void main(String[] args) {
@@ -22,7 +24,8 @@ public class Array_PrintEvenOdd {
 //			
 //		}
 		
-		
+		// Logic 3
+		IntStream.of(numbers).filter(a -> a % 2 == 0).forEach(System.out::println);
 
 	}
 

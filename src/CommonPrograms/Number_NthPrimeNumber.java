@@ -8,9 +8,9 @@ public class Number_NthPrimeNumber {
 		int cnt = 0;
 		for (int i = 1; i < 1000; i++) {
 
-			int num = i;
+			//int num = i;
 			int count = 0;
-			for (int j = 1; j <= num; j++) {
+			for (int j = 1; j <= i; j++) {
 				if (i % j == 0) {
 					count++;
 				}

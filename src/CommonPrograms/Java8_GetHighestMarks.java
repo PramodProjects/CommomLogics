@@ -41,6 +41,11 @@ public class Java8_GetHighestMarks {
 		
 		// Name who got highest marks
 		studentList.stream().filter(a -> a.getMarks() == max).forEach(a -> System.out.println(a.getName()));
+		
+		// Streams
+		int max5 = studentList.stream().mapToInt(s ->s.getMarks()).max().getAsInt();
+		System.out.println(max5);
+		
 	}
 
 }

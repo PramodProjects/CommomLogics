@@ -2,6 +2,7 @@ package CommonPrograms;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class String_DistinctStringArray {
@@ -12,7 +13,7 @@ public class String_DistinctStringArray {
 		String[] strArr = str2.split(" ");
 
 		String str1 = "";
-		Set<String> lhs = new HashSet<String>();
+		Set<String> lhs = new LinkedHashSet<String>();
 		for (int i = 0; i < strArr.length; i++) {
 			if (lhs.add(strArr[i]) == true) {
 				if (strArr[i].equals("Apple")) {

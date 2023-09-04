@@ -1,6 +1,7 @@
 package CommonPrograms;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Array_CountEachCharacter {
 
@@ -8,7 +9,8 @@ public class Array_CountEachCharacter {
 		
 		// Logic 1
 		char[] c = { 'a', 'a', 'b', 'c', 'a', 'b', 'c', 'c' };
-		ArrayList al = new ArrayList<>();
+		//ArrayList al = new ArrayList<>();
+		HashMap hm = new HashMap();
 		int count =0;
 		for (int i = 0; i < c.length; i++) {
 			for (int j = 0; j < c.length; j++) {
@@ -18,12 +20,17 @@ public class Array_CountEachCharacter {
 
 			}
 			
-			if(!al.contains(c[i])) {
-				al.add(c[i]);
-			System.out.println(c[i] + "  " + count);			
-			}
+//			if(!al.contains(c[i])) {
+//				al.add(c[i]);
+//			System.out.println(c[i] + "  " + count);			
+//			}
+			
+			hm.put(c[i], count);
+			
 			count=0;
 		}
+		System.out.println(hm);
+		
 		
 		// Logic 2
 		int[] arr = new int[] { 1, 2, 8, 3, 2, 2, 2, 5, 1, 8 };

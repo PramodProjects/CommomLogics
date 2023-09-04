@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 
-public class ReadDataFromTextFile {
+public class File_ReadDataFromTextFile {
 
 	public static void main(String[] args) throws IOException {
 		FileReader fr = new FileReader("C:\\Users\\7504996\\OneDrive - TeleTech Holdings, Inc\\Projects\\Automation\\CommomLogics\\src\\CommonPrograms\\TextFile.txt");

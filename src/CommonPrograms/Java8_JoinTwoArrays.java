@@ -13,6 +13,8 @@ public class Java8_JoinTwoArrays {
 		Stream<String> ss2 = Arrays.stream(s2);
 		String[] str = Stream.concat(ss1, ss2).toArray(size -> new String[size]);
 		System.out.println(Arrays.toString(str));
+		
+		
 
 	}
 

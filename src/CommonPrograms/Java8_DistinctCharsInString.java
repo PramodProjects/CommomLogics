@@ -10,7 +10,7 @@ public class Java8_DistinctCharsInString {
 		
 		System.out.println();
 		
-		// Disting strings
+		// Distinct strings
 		String strr = "This is Apple, Apple is a good organization";
 		String strr2 = strr.replaceAll(",", "");
 		String[] strArr = strr2.split(" ");

@@ -28,6 +28,9 @@ public class Collections_DistinctValues {
 		
 		// Logic 3
 		listString.stream().distinct().forEach(a -> System.out.println(a));
+		
+		// Logic 4
+		Arrays.asList(arrayStrings).stream().distinct().forEach(System.out::println);;
 
 	}
 

@@ -22,6 +22,11 @@ public class Java8_AverageArray {
 		// Logic 3 Streams
 		 Double d = Arrays.stream(num).average().getAsDouble();
 		System.out.println(d);
+		
+		// Logic 4
+		Integer[] inum = { 1, 2, 3, 4 };
+		OptionalDouble od1 = Arrays.stream(inum).mapToInt(a ->a).average();
+		System.out.println(od1.getAsDouble());
 
 	}
 

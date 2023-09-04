@@ -1,6 +1,7 @@
 package CommonPrograms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.TreeSet;
 
@@ -32,8 +33,12 @@ public class Collections_Sorting_Descending {
 		
 		// Logic 3
 		al.stream().sorted((a, b) -> -a.compareToIgnoreCase(b))
-		.forEach(x -> System.out.print(x + " "));
+		.forEach(x -> System.out.println(x + " "));
 		
+		
+		// Logic 4 - using Collections class
+		Collections.sort(al, Comparator.reverseOrder());
+		System.out.println(al);
 	}
 
 }

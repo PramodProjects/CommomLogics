@@ -4,7 +4,7 @@ public class String_DuplicateWords {
 
 	public static void main(String[] args) {
 
-		String string = "abc xyz abc zzz abc zzz";
+		String string = "aaa mmm yyy zzz aaa zzz";
 		int count;
 
 		// Converts the string into lowercase

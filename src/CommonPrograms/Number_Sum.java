@@ -2,6 +2,7 @@ package CommonPrograms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Number_Sum {
@@ -39,6 +40,11 @@ public class Number_Sum {
 		al.add(1);
 		int sum4 = al.stream().mapToInt(a -> a).sum();
 		System.out.println(sum4);
+		
+		// Logic 7
+		int[] nums5 = {1,1,1,1};
+		int sum5 = IntStream.of(nums5).sum();
+		System.out.println(sum5);
 	}
 
 	public static int sum(int... numbers) {

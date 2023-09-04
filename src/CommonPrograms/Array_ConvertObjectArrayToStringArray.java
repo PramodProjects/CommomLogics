@@ -23,8 +23,8 @@ public class Array_ConvertObjectArrayToStringArray {
 		System.out.println(Arrays.toString(str));
 
 		// Logic 2
-		Collection collection1 = hMap.values();
-		String[] str1 = (String[]) collection1.stream().toArray(String[]::new);
+		Collection<String> collection1 = hMap.values();
+		String[] str1 =  collection1.stream().toArray(String[]::new);
 		System.out.println(Arrays.toString(str1));
 
 		// Logic 3

@@ -8,7 +8,7 @@ public class String_PrintName1000TimesWithoutUsingLoop {
 		s = s.replaceAll("i", "iiiiiiiiii"); // 10*10 = 100
 		s = s.replaceAll("i", "iiiiiiiiii"); // 100*10 = 1000
 		
-		s = s.replace("i", "pramod" + "\n");
+		s = s.replaceAll("i", "pramod" + "\n");
 		
 		System.out.println(s);
 		

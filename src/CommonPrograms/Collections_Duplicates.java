@@ -1,14 +1,19 @@
 package CommonPrograms;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.Set;
 
-public class Collections_FindDuplicates {
+public class Collections_Duplicates {
 
 	public static void main(String[] args) {
+		
+		// Logic 1
 		int[] num = { 1, 2, 3, 1, 2 };
 		HashMap<Integer, Integer> hMap = new HashMap<Integer, Integer>();
 
@@ -31,6 +36,22 @@ public class Collections_FindDuplicates {
 				System.out.println(entryMap.getKey());
 			}
 		}
+		
+		// Logic 2
+		Integer[] num1 = { 1, 2, 3, 1, 2 };
+		Set<Entry<Integer, Long>> mm=Arrays.asList(num1).stream().map(a -> a)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+				.entrySet();
+		Iterator<Entry<Integer, Long>> itr = mm.iterator();
+		while(itr.hasNext()) {
+			Entry<Integer, Long> entry = itr.next();
+			if(entry.getValue()>1) {
+				System.out.println(entry.getKey() + " - " + entry.getValue());
+			}
+		}
+		
+		
+		
 
 	}
 

@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class MergeTextFiles {
+public class File_MergeTextFiles {
 
 	public static void main(String[] args) throws IOException {
 		PrintWriter pw = new PrintWriter(

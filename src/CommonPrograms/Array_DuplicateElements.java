@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-public class Array_FindDuplicateElements {
+public class Array_DuplicateElements {
 
 	public static void main(String[] Args) {
 		
@@ -53,11 +53,11 @@ public class Array_FindDuplicateElements {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
 					count1++;
-					arr[j] = -1;
+					arr[j] = '\0';
 				}
 			}
 
-			if (arr[i] != -1 && count1>1) {
+			if (arr[i] != '\0' && count1>1) {
 				System.out.println(arr[i] + "- is duplicate");
 			}
 			

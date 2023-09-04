@@ -1,7 +1,9 @@
 package CommonPrograms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.NavigableSet;
 import java.util.TreeSet;
 
 public class Collections_Sorting_Ascending {
@@ -29,5 +31,21 @@ public class Collections_Sorting_Ascending {
 		// Logic 3 - ignore case
 		alist.stream().sorted((a, b) -> a.compareToIgnoreCase(b))
 		.forEach(x -> System.out.print(x));
+		
+		// Logic 4  - Collections class
+		System.out.println();
+		Collections.sort(alist);
+		System.out.println(alist);
+		
+		// Logic 5
+		NavigableSet<String> set = new TreeSet<String>();
+		set.add("g");
+		set.add("d");
+		set.add("a");
+		set.add("b");
+		set.stream().sorted((a,b) -> a.compareToIgnoreCase(b)).forEach(System.out::println);
+		
+		
+		
 	}
 }

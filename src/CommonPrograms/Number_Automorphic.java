@@ -13,7 +13,7 @@ public class Number_Automorphic {
 
 	public static void main(String[] args) {
 		int num = 76;
-		int sNum = 76 * 76; //5,776
+		int sNum = 76 * 76; //5776
 		boolean flag = true;
 		while (num != 0) {
 			if (num % 10 != sNum % 10) {

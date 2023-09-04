@@ -15,7 +15,6 @@ public class String_RemoveAdjacentChars {
 	    Matcher m = Pattern.compile(regex).matcher(input);	    
 	    while(m.find()) {
 	    	input = input.replaceAll(regex, "");
-	    	m = Pattern.compile(regex).matcher(input);
 	    }
 		
 	    System.out.println(input);

@@ -23,7 +23,15 @@ public class Collections_Reverse {
 			System.out.println(str);
 			stack.push(str);
 		}
+		
+		
+		// Logic 1
+		System.out.println("======= Reverse using Collectins class");
+		Collections.reverse(list);
+		System.out.println(list);
+		
 
+		// Logic 2
 		System.out.println("======= Reverse for loop using List");
 		for (int i = list.size() - 1; i >= 0; i--) {
 			String str = (String) list.get(i);
@@ -31,6 +39,7 @@ public class Collections_Reverse {
 			
 		}
 
+		// Logic 3
 		System.out.println("======= Reverse for loop in Stack ====");
 
 		for (int i = stack.size() - 1; i >= 0; i--) {
@@ -38,6 +47,7 @@ public class Collections_Reverse {
 			System.out.println(str);
 		}
 
+		// Logic 4
 		System.out.println("======= Using Iterator ====");
 
 		Iterator<String> iterator = stack.iterator();
@@ -46,6 +56,7 @@ public class Collections_Reverse {
 			System.out.println(str);
 		}
 		
+		// Logic 5
 		System.out.println("======= Using Linked List & descendingIterator ====");
 		
 		LinkedList<String> linkedList = new LinkedList<>();
@@ -56,6 +67,7 @@ public class Collections_Reverse {
 			System.out.println(str);			
 		}
 		
+		// Logic 6
 		// Using NavigableSet
 		NavigableSet set = new TreeSet();
 		set.add("g");
@@ -66,6 +78,8 @@ public class Collections_Reverse {
 		
 		NavigableSet set1= set.descendingSet();
 		System.out.println(set1);
+		
+		// Logic 7
 		
 		
 		

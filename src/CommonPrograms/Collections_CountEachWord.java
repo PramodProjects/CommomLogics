@@ -1,11 +1,17 @@
 package CommonPrograms;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Collections_CountEachWord {
 
 	public static void main(String[] args) {
 		String s = "aa aa bb cc aa bb cc";
+		
+		// Logic 1
 		String[] str = s.split(" ");
 		int count = 0;
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
@@ -19,6 +25,11 @@ public class Collections_CountEachWord {
 
 		}
 		System.out.println(map);
+		
+		// Logic 2
+		Map<Object, Long> result = Arrays.stream(s.split(" ")).map(a -> a)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		System.out.println(result);
 
 	}
 

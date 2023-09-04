@@ -1,6 +1,6 @@
 package CommonPrograms;
 
-public class PrintStringWithoutUsingSemiColon {
+public class String_PrintStringWithoutUsingSemiColon {
 
 	public static void main(String[] args) {
 		// Logic 1
@@ -19,7 +19,7 @@ public class PrintStringWithoutUsingSemiColon {
 		}
 
 		// Logic 4
-		for (int i = 0; i < 1; System.out.append("Hello World")) {
+		for (int i = 0; i < 1; System.out.println("Hello World")) {
 			i++;
 		}
 

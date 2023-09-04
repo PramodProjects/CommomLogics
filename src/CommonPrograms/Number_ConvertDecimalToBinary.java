@@ -4,29 +4,29 @@ public class Number_ConvertDecimalToBinary {
 
 	public static void main(String[] args) {
 		//Logic 1
-		/*Integer a = 100;
+		int a = 4;
 		String b = "";
-		Integer c = 0;
+		int c = 0;
 		while (a != 0){
 			
 			c = a % 2;
 			a = a/2;
 	
-			b = c.toString() + b;
+			b = c + b;
 		}
 		System.out.println(b);
-	*/
+	
 		
 		
 		// Logic 2
 		
-		int  a = 4;
+		int  num = 4;
 		int x = 0;
 		int[] intArr = new int[100];
-		while(a!=0)
+		while(num!=0)
 		{
-			intArr[x++] = a%2;
-			a = a/2;
+			intArr[x++] = num%2;
+			num = num/2;
 		}
 		
 		for (int i = x-1;i>=0;i--)

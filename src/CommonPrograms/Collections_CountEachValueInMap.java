@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.Set;
 
 public class Collections_CountEachValueInMap {
@@ -62,7 +64,14 @@ public class Collections_CountEachValueInMap {
 
 			}
 
-		}
+		}	
+		
+		
+		// Logic 3 Streams
+		Map<String, Long> result = hMap.values().stream().map(a -> a)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		System.out.println(result);
+		
 
 	}
 

@@ -23,7 +23,6 @@ public class Number_Even {
 				System.out.println(i);
 			}
 		}
-
 		
 		// Lamda
 		Predicate<Integer> pred = a -> a%2 ==0;

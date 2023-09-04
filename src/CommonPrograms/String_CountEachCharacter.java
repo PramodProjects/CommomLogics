@@ -1,6 +1,10 @@
 
 package CommonPrograms;
 
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 public class String_CountEachCharacter {
 
 	public static void main(String[] args) {
@@ -78,6 +82,12 @@ public class String_CountEachCharacter {
 		String s2 = "fdhklf";
 		long cnt =s2.chars().filter(ch-> ch == 'f').count();
 		System.out.println(cnt);
+		
+		// Logic 5
+		String s3 = "abcabca";
+		Map<Object, Long> result = s3.chars().mapToObj(a -> (char) a)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		System.out.println(result);
 
 	}
 
