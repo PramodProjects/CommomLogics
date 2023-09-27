@@ -47,7 +47,7 @@ public class String_Reverse {
 		
 		// Logic 4
 		StringBuilder sb = new StringBuilder(s);
-		sb.reverse().toString();
+		sb.reverse();
 		System.out.println(sb);
 		
 		// Logic 5

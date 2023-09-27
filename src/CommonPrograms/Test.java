@@ -65,10 +65,17 @@ import org.omg.Messaging.SyncScopeHelper;
 public class Test {
 
 	public static void main(String args[]) throws IOException {
+
+		LinkedList l = new LinkedList();
+		l.add("a");
+		l.add("d");
+		l.add("c");
+		Collections.reverse(l); 
+		System.out.println(l);
 		
-		String str = "abcabb";
 		
-		str.chars().distinct().forEach(a -> System.out.println((char)a));
+		
+	
 
 //			
 //		String str = "aabc dddfg abc";

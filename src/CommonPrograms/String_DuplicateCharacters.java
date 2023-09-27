@@ -23,12 +23,9 @@ public class String_DuplicateCharacters {
 		
 		// Logic 2
 		String string1 = "habcabccgghy";    
-        int count1;    
-            
+        int count1;            
         //Converts given string into character array    
-        char string[] = string1.toCharArray();    
-            
-        System.out.println("Duplicate characters in a given string: ");    
+        char string[] = string1.toCharArray(); 
         //Counts each character present in the string    
         for(int i = 0; i <string.length; i++) {    
             count1 = 1;    

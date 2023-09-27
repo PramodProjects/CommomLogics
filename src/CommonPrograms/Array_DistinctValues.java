@@ -73,14 +73,12 @@ public class Array_DistinctValues {
 					num11[j] = '\0';
 				}
 			}
-
-		}
-
-		for (int i = 0; i < num11.length; i++) {
 			if (num11[i] != '\0') {
 				System.out.print(num11[i]);
 			}
+
 		}
+
 		System.out.println();
 		
 		// Using Lambda Expression logic5

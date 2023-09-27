@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-public class FI_StringLengthFilter {
+public class Java8_StringLengthFilter {
 
 	public static void main(String[] args) {
 		String[] s = { "pra", "fsdafa", "fdsafdsafds" };

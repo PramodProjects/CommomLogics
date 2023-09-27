@@ -13,12 +13,12 @@ public class String_Replace {
 		
 		// Logic 2
 		
-	 System.out.println(s.replaceAll("[0-9]", ""));	
+	 System.out.println(s.replaceAll("[0-9]", ""));	 // abcdxyz
 		
 	 String str = "Hello World he He";
-     System.out.println( str.replace( 'H','W' ) );
-     System.out.println( str.replaceFirst("He", "Wa") );
-     System.out.println( str.replaceAll("He", "Wa") );
+     System.out.println( str.replace( 'H','W' ) );   // Wello World he We
+     System.out.println( str.replaceFirst("He", "Wa") );   // Wallo World he He
+     System.out.println( str.replaceAll("He", "Wa") );		//Wallo World he Wa
      
 
 	}

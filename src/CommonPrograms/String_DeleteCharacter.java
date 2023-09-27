@@ -7,7 +7,8 @@ public class String_DeleteCharacter {
 
 		// PROGRAM 1
 		System.out.println(s.replaceFirst(String.valueOf('a'), ""));
-
+		System.out.println(s.replaceFirst(Character.toString('a'), ""));
+		
 		// PROGRAM 2
 		System.out.println(s.replace(String.valueOf(s.charAt(3)), ""));
 

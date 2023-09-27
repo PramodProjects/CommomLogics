@@ -26,7 +26,9 @@ public class String_RemoveIntegers {
 		// Logic 3
 		for (int i = 0; i < s.length(); i++) {
 			if (Character.isDigit(s.charAt(i))) {
-				s = s.replace(String.valueOf(s.charAt(i)), "");
+				//s = s.replace(String.valueOf(s.charAt(i)), "");
+				s = s.replace(Character.toString(s.charAt(i)), "");
+				
 				i--;
 			}
 		}
