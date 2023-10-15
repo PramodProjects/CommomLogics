@@ -4,7 +4,7 @@ package CommonPrograms;
 
 /*An Armstrong number is one whose sum of digits raised to the power three 
 equals the number itself. 371, for example, is an Armstrong number
-because 3**3 + 7**3 + 1**3 = 371 */
+because 3*3*3 + 7*7*7 + 1*1*1 = 371 */
 
 
 public class Number_Armstrong {

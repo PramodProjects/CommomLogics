@@ -66,16 +66,11 @@ public class Test {
 
 	public static void main(String args[]) throws IOException {
 
-		LinkedList l = new LinkedList();
-		l.add("a");
-		l.add("d");
-		l.add("c");
-		Collections.reverse(l); 
-		System.out.println(l);
-		
-		
-		
 	
+		
+		
+		
+		
 
 //			
 //		String str = "aabc dddfg abc";

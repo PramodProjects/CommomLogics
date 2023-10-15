@@ -28,27 +28,45 @@ public class String_DeleteDuplicateCharacters {
 		}
 
 		System.out.println();
-		// Logic 2
+//		// Logic 2
+//		String str = "pprraqwp";
+//		int count = 0;
+//		String deleteDuplicate = "";
+//		for (int i = 0; i < str.length(); i++) {
+//			for (int j = 0; j < str.length(); j++) {
+//				if (str.charAt(i) == str.charAt(j)) {
+//					count++;
+//				}
+//			}
+//			if (count == 1) {
+//
+//				deleteDuplicate = deleteDuplicate + str.charAt(i);
+//
+//			}
+//			count = 0;
+//		}
+//		System.out.print(deleteDuplicate);
+		
+		
+		
+		// Logic 3
 		String str = "pprraqwp";
 		int count = 0;
-		String deleteDuplicate = "";
+		char[] ch = str.toCharArray();
 		for (int i = 0; i < str.length(); i++) {
-			for (int j = 0; j < str.length(); j++) {
-				if (str.charAt(i) == str.charAt(j)) {
+			count = 1;
+			for (int j = i+1; j < str.length(); j++) {
+				if (ch[i] == ch[j]) {
 					count++;
+					ch[j] = '\0';
 				}
 			}
-			if (count == 1) {
-
-				deleteDuplicate = deleteDuplicate + str.charAt(i);
-
-			}
-			count = 0;
+			if (ch[i]!= '0' && count == 1) {
+				System.out.print(ch[i]);
+			}			
 		}
-		System.out.print(deleteDuplicate);
-		System.out.println();
 
-//		// Logic 3
+//		// Logic 4
 //		String str = "abbcccda";
 //		for (int i = 0; i < str.length(); i++) {
 //			int count=0;
@@ -68,8 +86,8 @@ public class String_DeleteDuplicateCharacters {
 //		
 //		
 
-		// Logic 4
-
+		// Logic 5
+		System.out.println();
 		StringBuilder sb = new StringBuilder(str);
 		for (int i = 0; i < sb.length(); i++) {
 			boolean flag = false;

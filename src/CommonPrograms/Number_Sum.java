@@ -31,20 +31,25 @@ public class Number_Sum {
 		int sum3 = Arrays.stream(nums3).sum();
 		System.out.println(sum3);
 		
-		// Logic 6 Streams
+		// Logic 6
+		Integer[] nums4 = {1,1,1,1};
+		int sum4 = Arrays.stream(nums4).mapToInt(a -> a).sum();
+		System.out.println(sum4);
+		
+		// Logic 7 Streams
 		ArrayList<Integer> al = new ArrayList<Integer>();
 		al.add(1);
 		al.add(1);
 		al.add(1);
 		al.add(1);
 		al.add(1);
-		int sum4 = al.stream().mapToInt(a -> a).sum();
-		System.out.println(sum4);
-		
-		// Logic 7
-		int[] nums5 = {1,1,1,1};
-		int sum5 = IntStream.of(nums5).sum();
+		int sum5 = al.stream().mapToInt(a -> a).sum();
 		System.out.println(sum5);
+		
+		// Logic 8
+		int[] nums5 = {1,1,1,1};
+		int sum6 = IntStream.of(nums5).sum();
+		System.out.println(sum6);
 	}
 
 	public static int sum(int... numbers) {

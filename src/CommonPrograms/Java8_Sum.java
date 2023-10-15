@@ -9,7 +9,7 @@ public class Java8_Sum {
 		Integer[] numbers = { 60, 34, 1, 4, 8, 3, 80, 10, 4, 8, 34, 2, 9, 70, 70 };
 
 		// Logic 1
-		int sum1 = Stream.of(numbers).mapToInt(Integer::intValue).sum();
+		int sum1 = Stream.of(numbers).mapToInt(a -> a).sum();
 		System.out.println(sum1);
 
 		// Logic 2

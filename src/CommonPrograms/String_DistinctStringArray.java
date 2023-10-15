@@ -30,8 +30,8 @@ public class String_DistinctStringArray {
 		
 		
 		// Logic 2 Java 8 Streams
-//		String[] strArr = str.replace(",", "").split(" ");
-//		Arrays.stream(strArr).distinct().forEach(a -> System.out.print(a + " "));
+		String[] strArr1 = str.replace(",", "").split(" ");
+		Arrays.stream(strArr1).distinct().forEach(a -> System.out.print(a + " "));
 		
 
 	}

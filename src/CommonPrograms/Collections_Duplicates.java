@@ -51,6 +51,14 @@ public class Collections_Duplicates {
 		}
 		
 		
+		// Logic 3
+		Integer[] num2 = { 1, 2, 3, 1, 2 };
+		Arrays.stream(num2).map(a -> a)
+		.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+		.entrySet()
+		.stream().filter(a -> a.getValue() > 1)
+		.forEach(a -> System.out.println(a.getKey() + " -  " + a.getValue()));
+		
 		
 
 	}

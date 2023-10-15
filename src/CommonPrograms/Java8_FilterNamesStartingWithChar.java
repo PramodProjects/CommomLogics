@@ -13,7 +13,7 @@ public class Java8_FilterNamesStartingWithChar {
 		// Logic 1
 		Stream<String> stream = Stream.of(array);
 		//Printing only names that start with 'J'
-		stream.filter(string -> string.startsWith("J"))
+		stream.filter(s -> s.startsWith("J"))
 		        .forEach(string -> System.out.println(string));
 		
 		
